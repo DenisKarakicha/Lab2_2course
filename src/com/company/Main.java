@@ -27,11 +27,32 @@ public class Main {
         for (int i = 0; i < triangles.triangle.length; i++) {
             triangles.triangle[i] = new Triangle();
             System.out.print("Введите сторону А: ");
-            triangles.triangle[i].setSideA(input.nextInt());
+            while (true) {
+               if(triangles.triangle[i].setSideA(input.nextInt()) == true){
+                   break;
+               }
+               else{
+                   System.out.print("Введите коректные данные : ");
+               }
+            }
             System.out.print("Введите сторону В: ");
-            triangles.triangle[i].setSideB(input.nextInt());
+            while (true) {
+                if(triangles.triangle[i].setSideB(input.nextInt()) == true){
+                    break;
+                }
+                else{
+                    System.out.print("Введите коректные данные : ");
+                }
+            }
             System.out.print("Введите сторону C: ");
-            triangles.triangle[i].setSideC(input.nextInt());
+            while (true) {
+                if(triangles.triangle[i].setSideC(input.nextInt()) == true){
+                    break;
+                }
+                else{
+                    System.out.print("Введите коректные данные : ");
+                }
+            }
         }
 
         for (int i = 0; i < triangles.triangle.length; i++) {
@@ -53,11 +74,32 @@ public class Main {
         for (int i = 0; i < rectangles.rectangle.length; i++) {
             rectangles.rectangle[i] = new Rectangle();
             System.out.print("Введите сторону А: ");
-            rectangles.rectangle[i].setSideA(input.nextInt());
+            while (true) {
+                if(triangles.triangle[i].setSideA(input.nextInt()) == true){
+                    break;
+                }
+                else{
+                    System.out.print("Введите коректные данные : ");
+                }
+            }
             System.out.print("Введите сторону В: ");
-            rectangles.rectangle[i].setSideB(input.nextInt());
+            while (true) {
+                if(triangles.triangle[i].setSideB(input.nextInt()) == true){
+                    break;
+                }
+                else{
+                    System.out.print("Введите коректные данные : ");
+                }
+            }
             System.out.print("Введите сторону C: ");
-            rectangles.rectangle[i].setSideC(input.nextInt());
+            while (true) {
+                if(triangles.triangle[i].setSideC(input.nextInt()) == true){
+                    break;
+                }
+                else{
+                    System.out.print("Введите коректные данные : ");
+                }
+            }
         }
 
         for (int i = 0; i < rectangles.rectangle.length; i++) {
