@@ -14,39 +14,42 @@ public class Triangle {
         return sideA;
     }
 
-    public void setSideA(int sideA) {
-        int trueSideA = sideA;
-        if (trueSideA < 0) {
-            System.out.print("Введите значение больше 0! : ");
-            trueSideA = input.nextInt();
+    public boolean setSideA(int sideA) {
+        if(sideA < 0) {
+            return  false;
         }
-        this.sideA = trueSideA;
+        else {
+            this.sideA = sideA;
+            return true;
+        }
     }
 
     public int getSideB() {
         return sideB;
     }
 
-    public void setSideB(int sideB) {
-        int trueSideB = sideB;
-        if (trueSideB < 0) {
-            System.out.print("Введите значение больше 0! : ");
-            trueSideB = input.nextInt();
+    public boolean setSideB(int sideB) {
+        if(sideB < 0) {
+            return  false;
         }
-        this.sideB = trueSideB;
+        else {
+            this.sideA = sideA;
+            return true;
+        }
     }
 
     public int getSideC() {
         return sideC;
     }
 
-    public void setSideC(int sideC) {
-        int trueSideC = sideC;
-        if (trueSideC < 0) {
-            System.out.print("Введите значение больше 0! : ");
-            trueSideC = input.nextInt();
+    public boolean setSideC(int sideC) {
+        if(sideC < 0) {
+            return  false;
         }
-        this.sideC = trueSideC;
+        else {
+            this.sideA = sideA;
+            return true;
+        }
     }
 
     public boolean rightTriangle() {
